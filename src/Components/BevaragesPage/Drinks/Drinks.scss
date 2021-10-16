@@ -1,0 +1,16 @@
+.drinks__container {
+  .drinks__dropdown {
+    padding: 10px 0px;
+    margin-right: 10px;
+  }
+  .drinks__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-height: 64vh;
+    overflow: scroll;
+    @media (max-width: 1400px) {
+      justify-content: center;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@800;1000&display=swap');
+.greatTableBodyHeader__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  padding:5px;
+  .greatTableBodyHeader__heading {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+    .greatTableBodyHeader__headingHeader {
+      font-family: "Scheherazade New", serif;
+       font-size: 36px;;
+       color: grey;
+    }
+    .greatTableBodyHeader__headingDay{
+        color: grey;
+      text-align: center;
+
+    }
+  }
+}

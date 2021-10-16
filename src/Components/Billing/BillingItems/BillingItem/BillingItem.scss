@@ -1,0 +1,18 @@
+.billingItem__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #929292;
+  padding: 8px 0px;
+  .billingItem__name {
+    flex: 1;
+  }
+
+  .billingItem__quantity {
+    flex: 1;
+  }
+  .billingItem__totalPrice {
+    // flex: 1;
+    transition: none;
+  }
+}

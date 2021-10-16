@@ -1,0 +1,24 @@
+@mixin display-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+}
+.gridTableMenusList__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px;
+    .gridTableMenusList__calendar,.gridTableMenusList__fork,.gridTableMenusList__contact{
+        @include display-flex();
+        border-left: 1px solid transparent;
+        &:hover{
+           border-left: 1px solid black;
+           
+        }
+    }
+    .menuList_active{
+        border-left: 1px solid black;
+        
+   }
+}

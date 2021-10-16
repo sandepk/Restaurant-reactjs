@@ -1,0 +1,13 @@
+.billingItems__container{
+    width: 100%;
+    padding:10px;
+    border-bottom: 0.2px solid lightgrey;
+    .billingItems__itemInfo{
+        display: flex;
+        justify-content: space-between;
+        .billingItems__itemType,.billingItems__totalPrice{
+            font-size: 40;
+            font-weight: bold;
+        }
+    }
+}

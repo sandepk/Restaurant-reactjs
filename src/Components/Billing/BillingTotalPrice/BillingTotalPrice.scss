@@ -1,0 +1,16 @@
+.billingTotalPrice__container {
+  width: 100%;
+  .billingTotalPrice__expenseList {
+    .billingTotalPrice__expense {
+      display: flex;
+      padding: 10px;
+      justify-content: space-between;
+      .billingTotaPrice__expenseName {
+        color: #c6c6c6;
+      }
+      .billingTotaPrice__expenseAmount {
+        color: #1a1717;
+      }
+    }
+  }
+}

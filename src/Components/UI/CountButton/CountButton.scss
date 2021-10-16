@@ -1,0 +1,19 @@
+.countButton__container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    .countButton__item{
+        border:1px solid black;
+        width: 65px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        
+    }
+}
+
+.css-1x51dt5-MuiInputBase-input-MuiInput-input{
+    text-align: center;
+
+}
