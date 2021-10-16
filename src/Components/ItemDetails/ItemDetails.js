@@ -45,9 +45,9 @@ const ItemDetails = (props) => {
       };
     });
     // array of drinks
-    let tempCartItemsTypeList = cartItems[props.type];
+    let tempCartItemsTypeList = cartItems?.[props.type];
 
-    let tempFilteredOutExistingItem =(tempCartItemsTypeList.length > 0)?  tempCartItemsTypeList.filter(item=>item.id !== props.id):[];
+    let tempFilteredOutExistingItem =(Array.isArray(tempCartItemsTypeList) && tempCartItemsTypeList.length > 0)?  tempCartItemsTypeList.filter(item=>item.id !== props.id):[];
     
     tempFilteredOutExistingItem.push(tempDrinkDetails);
      let newCartItems ={

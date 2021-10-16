@@ -5,6 +5,7 @@ import './BillingTotalPrice.scss'
 import { useSelector } from "react-redux";
 const BillingTotalPrice = (props) => {
    const amountPayable = useSelector((state) => state.reducer.amountPayable);
+   console.log(amountPayable)
   const [billingData,setBillingData] = useState(
     {
       SubTotal: 0,
@@ -20,9 +21,13 @@ const BillingTotalPrice = (props) => {
     let itemTypes = ["Drinks","Food","Dessert"]
     let tempSubTotal = 0;
     itemTypes.map(item=>{
-      tempSubTotal += amountPayableDetails[item];
-       return item;
-    });
+      if(amountPayableDetails[item] ){
+
+          tempSubTotal += +amountPayableDetails[item];
+        }
+        return item;
+      })
+    console.log("TEMP SUB TOTAL : ",tempSubTotal)
     let estimatedTax = +tempSubTotal*0.3;
     estimatedTax = estimatedTax.toFixed(2)
     let discount = +tempSubTotal*0.1;

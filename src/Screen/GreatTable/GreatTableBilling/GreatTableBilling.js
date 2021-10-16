@@ -9,7 +9,7 @@ const label = { inputProps: { 'aria-label': 'Switch demo' } };
 const GreatTableBilling = () => {
 const cartItems = useSelector(state=>state.reducer.cartItems);
   let renderedBillingItems = null;
-  renderedBillingItems = Object.keys(cartItems).map(item=>{
+  renderedBillingItems = cartItems && Object.keys(cartItems).map(item=>{
       return <BillingItems key={uuidv4()} itemsType ={item} cartItemsDetails ={cartItems[item]} />
   })
     return (
